@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0635cc126a.js" crossorigin="anonymous"></script>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="Calculadora.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button onclick="clean()">C</button></td>
+                    <td><button onclick="backspace()"><i class="fas fa-backspace"></i></button></td>
+                    <td><button onclick="botao('.')">.</button></td>
+                    <td><button class="btn-div" onclick="botao('/')"><i class="fas fa-divide"></i></button></td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="botao('7')">7</button></td>
+                    <td><button onclick="botao('8')">8</button></td>
+                    <td><button onclick="botao('9')">9</button></td>
+                    <td><button class="btn-mul" onclick="botao('*')">x</button></td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="botao('4')">4</button></td>
+                    <td><button onclick="botao('5')">5</button></td>
+                    <td><button onclick="botao('6')">6</button></td>
+                    <td><button class="btn-sub" onclick="botao('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="botao('1')">1</button></td>
+                    <td><button onclick="botao('2')">2</button></td>
+                    <td><button onclick="botao('3')">3</button></td>
+                    <td><button class="btn-adc" onclick="botao('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button style="display: none;"></button></td>
+                    <td><button onclick="botao('0')">0</button></td>
+                    <td><button style="display: none;"></button></td>
+                    <td><button class="btn-res" onclick="result()">=</button></td> 
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="Calculadora.js"></script>
+</body>
+</html>

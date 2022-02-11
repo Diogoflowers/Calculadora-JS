@@ -1,0 +1,18 @@
+function botao(input) {
+    document.getElementById('resultado').innerHTML += input;
+}
+
+function clean() {
+    document.getElementById('resultado').innerHTML = '';
+}
+
+function backspace() {
+    var resultado = document.getElementById('resultado').innerHTML;
+    document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1)
+
+}
+
+function result() {
+    var resultado = document.getElementById('resultado').innerHTML
+    document.getElementById('resultado').innerHTML = eval(resultado);
+}
